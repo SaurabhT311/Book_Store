@@ -1,7 +1,9 @@
 const { buildCheckFunction, body, params } = require('express-validator');
 const check = buildCheckFunction(["headers", "params"]);
 
+
 module.exports = {
+
     register: [
         body('firstName')
             .trim()

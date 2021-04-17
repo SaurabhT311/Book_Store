@@ -16,3 +16,17 @@ error: {"success":false,"status":508,"message":"Unexpected token } in JSON at po
 error: {"flag":false,"message":"Email id exist!","code":409} {"timestamp":"16-04-2021 23:49:50"}
 error: {"flag":true,"message":"Registration Succesfull!","data":{"role":"Admin","_id":"6079d56f4216874304d45ded","firstName":"Itachi","lastName":"Uchiha","email":"uchihaitachi.311@gmail.com","mobile":8765145698,"password":"$2b$10$qUnTwVKiXSdFC22Pe2zkPuflgk14v8Ja.7fQWIhMgDGVhnJE5VThC","createdAt":"2021-04-16T18:20:31.022Z","updatedAt":"2021-04-16T18:20:31.022Z","__v":0},"code":200} {"timestamp":"16-04-2021 23:50:31"}
 error: {"success":false,"status":508,"message":"error is not defined"} {"timestamp":"17-04-2021 00:02:56"}
+error: {"success":false,"message":"Invalid Credentials!","error":[{"value":"Admin12","msg":"role should start with upperCase character","param":"role","location":"body"}]} {"timestamp":"17-04-2021 00:27:04"}
+error: {"flag":false,"message":"Email id exist!","code":409} {"timestamp":"17-04-2021 00:27:15"}
+error: {"flag":false,"message":"Registration Failed!","error":{"errors":{"role":{"name":"ValidatorError","message":"`Unite` is not a valid enum value for path `role`.","properties":{"message":"`Unite` is not a valid enum value for path `role`.","type":"enum","enumValues":["User","Admin"],"path":"role","value":"Unite"},"kind":"enum","path":"role","value":"Unite"}},"_message":"User validation failed","name":"ValidationError","message":"User validation failed: role: `Unite` is not a valid enum value for path `role`."},"code":400} {"timestamp":"17-04-2021 00:27:28"}
+error: {"flag":false,"message":"Registration Failed!","error":{"errors":{"role":{"name":"ValidatorError","message":"`admin` is not a valid enum value for path `role`.","properties":{"message":"`admin` is not a valid enum value for path `role`.","type":"enum","enumValues":["User","Admin"],"path":"role","value":"admin"},"kind":"enum","path":"role","value":"admin"}},"_message":"User validation failed","name":"ValidationError","message":"User validation failed: role: `admin` is not a valid enum value for path `role`."},"code":400} {"timestamp":"17-04-2021 00:44:36"}
+error: {"success":false,"status":508,"message":"role is not defined"} {"timestamp":"17-04-2021 01:49:56"}
+error: {"success":false,"status":508,"message":"admin is not defined"} {"timestamp":"17-04-2021 01:50:27"}
+error: {"success":false,"status":508,"message":"adminId is not defined"} {"timestamp":"17-04-2021 01:53:28"}
+error: {"success":false,"status":508,"message":"id is not defined"} {"timestamp":"17-04-2021 02:03:19"}
+error: {"success":false,"status":508,"message":"_id is not defined"} {"timestamp":"17-04-2021 02:11:08"}
+error: {"success":false,"status":508,"message":"_id is not defined"} {"timestamp":"17-04-2021 02:11:24"}
+error: {"success":false,"status":508,"message":"next is not defined"} {"timestamp":"17-04-2021 02:47:22"}
+error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp":"17-04-2021 02:47:49"}
+error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp":"17-04-2021 02:49:37"}
+error: {"success":false,"status":508,"message":"role is not defined"} {"timestamp":"17-04-2021 02:51:11"}

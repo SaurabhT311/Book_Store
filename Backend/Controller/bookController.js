@@ -1,5 +1,5 @@
 const bookService=require('../Service/bookService');
-let { OK,BadRequest } = require('../Middleware/httpStatusCode.json');
+let {OK, Unauthorized } = require('../Middleware/httpStatusCode.json');
 const response={};
 
 
@@ -25,7 +25,56 @@ class bookController{
                 })
             }else{
                 response.message="You cannot add book in the Store";
-                res.status(BadRequest).send(response);
+                res.status(Unauthorized).send(response);
+            }
+        }catch(error){
+            next(error)
+        }
+    }
+
+    getBookController(req,res,next){
+        try{
+            bookService.getBookService()
+            .then((result)=>{
+                console.log("r is:",result);
+                response.success=true;
+                response.message=result.message;
+                response.data=result.data;
+                res.status(result.code).send(response);
+                return response;
+            }).catch((error)=>{
+                response.success=false;
+                    response.message=error.message;
+                    res.status(error.code).send(response)
+            })
+        }catch(error){
+            next(error);
+        }
+    }
+
+    updateBookController(req,res,next){
+        try{
+            let newData=req.body;
+            let id=req.params.id;
+            console.log("update Id and data:",id, newData);
+            let role = req.decoded.role;
+            if(role === "Admin"){
+                bookService.updateBookService(id,newData)
+                .then((result)=>{
+                    console.log("body is:",result);
+                    response.success=true;
+                    response.message=result.message;
+                    response.data=result.data;
+                    res.status(result.code).send(response);
+                    return response;
+                }).catch((error)=>{
+                    response.success=false;
+                    response.message=error.message;
+                    res.status(error.code).send(response)
+                })
+            }else{
+                response.message="You cannot update book in the Store";
+                res.status(Unauthorized).send(response);
             }
         }catch(error){
             next(error)

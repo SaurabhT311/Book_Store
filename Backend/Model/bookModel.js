@@ -12,6 +12,12 @@ const bookSchema = new mongoose.Schema({
         required: true
     },
 
+    adminId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        require: true,
+    },
+
     description: {
         type: String,
         required: true
@@ -43,6 +49,27 @@ class bookModel {
         }).catch((error) => {
             return error
         })
+    }
+
+    getAllBooks() {
+        return books.find({})
+            .then((result) => {
+                console.log("res is:", result);
+                return result;
+            }).catch((error) => {
+                return error;
+            })
+    }
+
+    updateBook(id, newData) {
+        console.log("book updates", id, newData);
+        return books.findByIdAndUpdate(id, newData, { new: true })
+            .then((result) => {
+                console.log("res:", result);
+                return result;
+            }).catch((error) => {
+                return error;
+            })
     }
 
 }
