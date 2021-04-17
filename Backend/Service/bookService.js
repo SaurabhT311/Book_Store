@@ -33,6 +33,16 @@ class bookService {
         })
     }
 
+
+    deleteBookService(id){
+        return bookModel.deleteBook(id)
+        .then((result)=>{
+            return ({ flag: true, message: "Book record deleted succesfully", data: result, code: OK });
+        }).catch((error)=>{
+            return ({ flag: false, message: "Record not found", error: error, code: NotFound });
+        })
+    }
+
 }
 
 module.exports = new bookService();

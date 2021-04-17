@@ -14,4 +14,5 @@ route.post('/login', login, validate, userController.userLoginController);
 route.post('/book', jwtToken.tokenVerification, bookController.addBookController);
 route.get('/book/get',jwtToken.tokenVerification,bookController.getBookController);
 route.put('/book/:id',jwtToken.tokenVerification,bookController.updateBookController);
+route.delete('/book/:id',jwtToken.tokenVerification,bookController.deleteBookController);
 module.exports = route;

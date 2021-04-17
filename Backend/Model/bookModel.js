@@ -72,6 +72,15 @@ class bookModel {
             })
     }
 
+    deleteBook(id){
+        return books.findByIdAndDelete(id)
+        .then((result)=>{
+            return result;
+        }).catch((error)=>{
+            return error;
+        })
+    }
+
 }
 
 module.exports = new bookModel();

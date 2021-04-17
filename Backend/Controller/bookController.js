@@ -24,7 +24,7 @@ class bookController{
                     res.status(error.code).send(response)
                 })
             }else{
-                response.message="You cannot add book in the Store";
+                response.message="You are not authorized to add book in the Store";
                 res.status(Unauthorized).send(response);
             }
         }catch(error){
@@ -73,13 +73,42 @@ class bookController{
                     res.status(error.code).send(response)
                 })
             }else{
-                response.message="You cannot update book in the Store";
+                response.message="You are not authorized to update book in the Store";
                 res.status(Unauthorized).send(response);
             }
         }catch(error){
             next(error)
         }
     }
+
+    deleteBookController(req,res,next){
+        try{
+            let id=req.params.id;
+            console.log("Id is:",id);
+            let role = req.decoded.role;
+            if(role === "Admin"){
+                bookService.deleteBookService(id)
+                .then((result)=>{
+                    console.log("body is:",result);
+                    response.success=true;
+                    response.message=result.message;
+                    response.data=result.data;
+                    res.status(result.code).send(response);
+                    return response;
+                }).catch((error)=>{
+                    response.success=false;
+                    response.message=error.message;
+                    res.status(error.code).send(response)
+                })
+            }else{
+                response.message="You are not authorized to delete book in the Store";
+                res.status(Unauthorized).send(response);
+            }
+        }catch(error){
+            next(error)
+        }
+    }
+
 }
 
 module.exports=new bookController();
