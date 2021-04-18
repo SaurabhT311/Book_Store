@@ -25,6 +25,24 @@ class cartService {
             })
     }
 
+    updateCartService(id, newData) {
+        return cartModel.updateCart(id, newData)
+            .then((result) => {
+                return ({ success: true, message: "Cart Updated Successfully", data: result, code: OK });
+            }).catch((error)=>{
+                return ({ success: false, message: "Cart not found ", error: error, code: BadRequest });
+            })
+    }
+
+    // deleteCartService(id){
+    //     return cartModel.deleteCart(id)
+    //     .then((result)=>{
+    //         return ({ success: true, message: "Cart deleted Successfully", data: result, code: OK });
+    //     }).catch((error)=>{
+    //         return ({ success: false, message: "Cart Updated Successfully", data: result, code: OK });
+    //     })
+    // }
+
 }
 
 module.exports = new cartService();

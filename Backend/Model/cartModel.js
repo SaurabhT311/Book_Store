@@ -47,6 +47,24 @@ class cartModel {
             })
     }
 
+    updateCart(id, newData) {
+        return cart.findByIdAndUpdate(id, newData, { new: true })
+            .then((result) => {
+                return result;
+            }).catch((error) => {
+                return error;
+            })
+    }
+
+    // deleteCart(id){
+    //     return cart.findByIdAndDelete(id)
+    //     .then((result)=>{
+    //         return result;
+    //     }).catch((error)=>{
+    //         return error;
+    //     })
+    // }
+
 }
 
 module.exports = new cartModel();

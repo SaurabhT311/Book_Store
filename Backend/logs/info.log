@@ -231,3 +231,20 @@ info: This is port 5000 {"timestamp":"18-04-2021 21:55:27"}
 info: This is port 5000 {"timestamp":"18-04-2021 21:56:51"}
 info: This is port 5000 {"timestamp":"18-04-2021 21:57:17"}
 info: This is port 5000 {"timestamp":"18-04-2021 21:59:07"}
+info: This is port 5000 {"timestamp":"18-04-2021 22:05:01"}
+info: This is port 5000 {"timestamp":"18-04-2021 22:08:10"}
+info: This is port 5000 {"timestamp":"18-04-2021 22:09:20"}
+info: This is port 5000 {"timestamp":"18-04-2021 22:10:21"}
+info: This is port 5000 {"timestamp":"18-04-2021 22:13:22"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:26:30"}
+info: {"success":true,"message":"Token Generated","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzY4NjY1LCJleHAiOjE2MTg3NzU4NjV9.Vjx4JtgboJjxKYB1PDCirVO9YkEG9Z9VlDjn0ak0GbA"} {"timestamp":"18-04-2021 23:27:46"}
+info: {"flag":true,"message":"Login sucessfull !","data":{"_id":"60788bbfd135f127b8097330","role":"User","firstName":"Saurabh","lastName":"Tripathi","email":"tripathishivam.311@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzY4NjY1LCJleHAiOjE2MTg3NzU4NjV9.Vjx4JtgboJjxKYB1PDCirVO9YkEG9Z9VlDjn0ak0GbA"},"code":200} {"timestamp":"18-04-2021 23:27:46"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:32:15"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:32:23"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:33:05"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:38:44"}
+info: This is port 5000 {"timestamp":"18-04-2021 23:52:47"}
+info: This is port 5000 {"timestamp":"19-04-2021 00:06:32"}
+info: This is port 5000 {"timestamp":"19-04-2021 00:07:37"}
+info: This is port 5000 {"timestamp":"19-04-2021 00:08:13"}
+info: This is port 5000 {"timestamp":"19-04-2021 00:08:21"}
