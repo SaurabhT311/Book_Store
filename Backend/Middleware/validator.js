@@ -23,10 +23,6 @@ module.exports = {
             .isEmail().withMessage('Please enter valid email')
             .notEmpty().withMessage('email is required'),
 
-        body('role')
-        .trim()
-        .isAlpha().withMessage('role should start with upperCase character'),
-
         body('password')
             .trim()
             .notEmpty().withMessage('password is required')

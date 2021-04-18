@@ -173,3 +173,61 @@ info: This is port 5000 {"timestamp":"18-04-2021 16:34:50"}
 info: This is port 5000 {"timestamp":"18-04-2021 16:37:26"}
 info: This is port 5000 {"timestamp":"18-04-2021 16:38:42"}
 info: This is port 5000 {"timestamp":"18-04-2021 16:41:16"}
+info: This is port 5000 {"timestamp":"18-04-2021 16:44:08"}
+info: This is port 5000 {"timestamp":"18-04-2021 16:56:37"}
+info: This is port 5000 {"timestamp":"18-04-2021 16:57:29"}
+info: This is port 5000 {"timestamp":"18-04-2021 16:59:51"}
+info: This is port 5000 {"timestamp":"18-04-2021 18:25:31"}
+info: This is port 5000 {"timestamp":"18-04-2021 18:31:22"}
+info: This is port 5000 {"timestamp":"18-04-2021 18:33:30"}
+info: This is port 5000 {"timestamp":"18-04-2021 18:33:33"}
+info: {"success":true,"message":"Token Generated","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjMmUyOGY0YWU2YjJlZTQzZGEzZDMiLCJmaXJzdE5hbWUiOiJLYWthc2hpIiwibGFzdE5hbWUiOiJIYXRha2UiLCJlbWFpbCI6ImhhdGFrZWtha2FzaGkuMzExQGdtYWlsLmNvbSIsIm1vYmlsZSI6ODc2NTE0NTY5OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE2MTg3NTEwNDQsImV4cCI6MTYxODc1ODI0NH0.10_xQZbRLE8wzl1G1qqwhzbDT3ONv8iDhXidx5TKPwM"} {"timestamp":"18-04-2021 18:34:04"}
+info: {"flag":true,"message":"Login sucessfull !","data":{"_id":"607c2e28f4ae6b2ee43da3d3","role":"User","firstName":"Kakashi","lastName":"Hatake","email":"hatakekakashi.311@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjMmUyOGY0YWU2YjJlZTQzZGEzZDMiLCJmaXJzdE5hbWUiOiJLYWthc2hpIiwibGFzdE5hbWUiOiJIYXRha2UiLCJlbWFpbCI6ImhhdGFrZWtha2FzaGkuMzExQGdtYWlsLmNvbSIsIm1vYmlsZSI6ODc2NTE0NTY5OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE2MTg3NTEwNDQsImV4cCI6MTYxODc1ODI0NH0.10_xQZbRLE8wzl1G1qqwhzbDT3ONv8iDhXidx5TKPwM"},"code":200} {"timestamp":"18-04-2021 18:34:04"}
+info: This is port 5000 {"timestamp":"18-04-2021 19:47:59"}
+info: {"success":true,"message":"Token Generated","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjMmUyOGY0YWU2YjJlZTQzZGEzZDMiLCJmaXJzdE5hbWUiOiJLYWthc2hpIiwibGFzdE5hbWUiOiJIYXRha2UiLCJlbWFpbCI6ImhhdGFrZWtha2FzaGkuMzExQGdtYWlsLmNvbSIsIm1vYmlsZSI6ODc2NTE0NTY5OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE2MTg3NTU3MzAsImV4cCI6MTYxODc2MjkzMH0.cYtjWpbagjBMOQDy75d0ocO0VgMCRSWa6Z2srqhnYks"} {"timestamp":"18-04-2021 19:52:10"}
+info: {"flag":true,"message":"Login sucessfull !","data":{"_id":"607c2e28f4ae6b2ee43da3d3","role":"User","firstName":"Kakashi","lastName":"Hatake","email":"hatakekakashi.311@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdjMmUyOGY0YWU2YjJlZTQzZGEzZDMiLCJmaXJzdE5hbWUiOiJLYWthc2hpIiwibGFzdE5hbWUiOiJIYXRha2UiLCJlbWFpbCI6ImhhdGFrZWtha2FzaGkuMzExQGdtYWlsLmNvbSIsIm1vYmlsZSI6ODc2NTE0NTY5OCwicm9sZSI6IlVzZXIiLCJpYXQiOjE2MTg3NTU3MzAsImV4cCI6MTYxODc2MjkzMH0.cYtjWpbagjBMOQDy75d0ocO0VgMCRSWa6Z2srqhnYks"},"code":200} {"timestamp":"18-04-2021 19:52:10"}
+info: This is port 5000 {"timestamp":"18-04-2021 19:57:45"}
+info: This is port 5000 {"timestamp":"18-04-2021 20:01:48"}
+info: This is port 5000 {"timestamp":"18-04-2021 20:26:29"}
+info: This is port 5000 {"timestamp":"18-04-2021 20:27:33"}
+info: This is port 5000 {"timestamp":"18-04-2021 20:29:34"}
+info: This is port 5000 {"timestamp":"18-04-2021 20:30:02"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:05:16"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:06:16"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:13:36"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:13:55"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:14:13"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:17:01"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:17:43"}
+info: {"success":true,"message":"Token Generated","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzYwODg5LCJleHAiOjE2MTg3NjgwODl9.f4_q83D_nGWYDw77DuxtcPACWwmK6nIe5pDJXpeja0k"} {"timestamp":"18-04-2021 21:18:09"}
+info: {"flag":true,"message":"Login sucessfull !","data":{"_id":"60788bbfd135f127b8097330","role":"User","firstName":"Saurabh","lastName":"Tripathi","email":"tripathishivam.311@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzYwODg5LCJleHAiOjE2MTg3NjgwODl9.f4_q83D_nGWYDw77DuxtcPACWwmK6nIe5pDJXpeja0k"},"code":200} {"timestamp":"18-04-2021 21:18:09"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:22:38"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:23:28"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:24:11"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:25:42"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:28:27"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:28:49"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:29:53"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:30:30"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:31:09"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:31:44"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:39:07"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:39:30"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:40:46"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:41:20"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:41:34"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:42:06"}
+info: {"success":true,"message":"Token Generated","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzYyMzM3LCJleHAiOjE2MTg3Njk1Mzd9.YoWyB4cTlO_8x9egEW9_V30P5w3SXKKIKyDk9Ax6hjA"} {"timestamp":"18-04-2021 21:42:17"}
+info: {"flag":true,"message":"Login sucessfull !","data":{"_id":"60788bbfd135f127b8097330","role":"User","firstName":"Saurabh","lastName":"Tripathi","email":"tripathishivam.311@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDc4OGJiZmQxMzVmMTI3YjgwOTczMzAiLCJmaXJzdE5hbWUiOiJTYXVyYWJoIiwibGFzdE5hbWUiOiJUcmlwYXRoaSIsImVtYWlsIjoidHJpcGF0aGlzaGl2YW0uMzExQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNjE4NzYyMzM3LCJleHAiOjE2MTg3Njk1Mzd9.YoWyB4cTlO_8x9egEW9_V30P5w3SXKKIKyDk9Ax6hjA"},"code":200} {"timestamp":"18-04-2021 21:42:17"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:43:45"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:45:33"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:45:40"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:47:51"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:48:59"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:53:03"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:53:14"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:55:19"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:55:27"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:56:51"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:57:17"}
+info: This is port 5000 {"timestamp":"18-04-2021 21:59:07"}

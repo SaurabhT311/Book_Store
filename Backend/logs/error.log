@@ -31,3 +31,9 @@ error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp"
 error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp":"17-04-2021 02:49:37"}
 error: {"success":false,"status":508,"message":"role is not defined"} {"timestamp":"17-04-2021 02:51:11"}
 error: {"success":false,"message":"Invalid Credentials!","error":[{"value":"I","msg":"firstName requires more than 2 characters!","param":"firstName","location":"body"},{"value":"","msg":"role should start with upperCase character","param":"role","location":"body"}]} {"timestamp":"17-04-2021 12:08:14"}
+error: {"success":false,"message":"Invalid Credentials!","error":[{"value":"","msg":"role should start with upperCase character","param":"role","location":"body"}]} {"timestamp":"18-04-2021 16:56:45"}
+error: {"flag":true,"message":"Registration Succesfull!","data":{"role":"User","_id":"607c17a8b5e9fa19109047ea","firstName":"Kakashi","lastName":"Hatake","email":"hatakekakshi.311@gmail.com","mobile":8765145698,"password":"$2b$10$lbPWV7F3xKVsAPblSQ2/6uYvTZkO6z5GPxFAj.MnIegeHbqDuOx5.","createdAt":"2021-04-18T11:27:36.446Z","updatedAt":"2021-04-18T11:27:36.446Z","__v":0},"code":200} {"timestamp":"18-04-2021 16:57:36"}
+error: {"flag":true,"message":"Registration Succesfull!","data":{"role":"User","_id":"607c2e28f4ae6b2ee43da3d3","firstName":"Kakashi","lastName":"Hatake","email":"hatakekakashi.311@gmail.com","mobile":8765145698,"password":"$2b$10$sg/dpOd7YfqKde7d1LnBRu5T82zs81WMFaq8avwd1w10VV344qxS6","createdAt":"2021-04-18T13:03:36.944Z","updatedAt":"2021-04-18T13:03:36.944Z","__v":0},"code":200} {"timestamp":"18-04-2021 18:33:36"}
+error: {"success":false,"status":508,"message":"cartData is not defined"} {"timestamp":"18-04-2021 21:23:40"}
+error: {"success":false,"status":508,"message":"id is not defined"} {"timestamp":"18-04-2021 21:28:33"}
+error: {"success":false,"status":508,"message":"cartModel.find is not a function"} {"timestamp":"18-04-2021 21:58:47"}

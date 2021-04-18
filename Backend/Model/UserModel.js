@@ -80,8 +80,9 @@ class userModel {
             } else if (data.lenth === 0) {
                 callback(data);
             } else {
-                bcryptPassword.comparePassword(req.password, data[0].password).then(result => {
+                bcryptPassword.comparePassword(req.password, data[0].password).then( result => {
                     if (result) {
+                        console.log("res is:",result);
                         let token = jwtToken.tokenGeneration(this.userDataObject(data[0]));
                         let userData = {
                             "_id": data[0]._id,
@@ -93,7 +94,7 @@ class userModel {
                         }
                         callback(null, userData);
                     } else {
-                        callback(bull, result);
+                        callback(null, result);
                     }
                 })               
             }

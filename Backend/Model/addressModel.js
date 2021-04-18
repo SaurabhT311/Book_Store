@@ -3,15 +3,26 @@ const mongoose = require('mongoose');
 
 const addressSchema = new mongoose.Schema({
 
+
+    fullName:{
+        type:String,
+        required:true
+    },
+
     addressType: {
         type: String,
-        enum: ['Home', 'Office', 'Others'],
+        enum: ['Home', 'Office'],
         default: 'Home'
     },
 
     fullAddress: {
         type: String,
         required: true
+    },
+
+    pincode:{
+        type:Number,
+        required:true
     },
 
     city: {
