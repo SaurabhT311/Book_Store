@@ -22,8 +22,8 @@ route.delete('/book/:id', jwtToken.tokenVerification, bookController.deleteBookC
 //cart routes
 route.post('/cart/add', jwtToken.tokenVerification, cartController.addCartController);
 route.get('/cart', jwtToken.tokenVerification, cartController.getCartController);
-route.put('/cart/:id', jwtToken.tokenVerification, cartController.updateCartController);
-
+route.put('/cart/update/:id', jwtToken.tokenVerification, cartController.updateCartController);
+route.delete('/cart/delete/:id',jwtToken.tokenVerification,cartController.deleteCartController);
 
 //address route
 route.post('/add', jwtToken.tokenVerification, addController.addressController);

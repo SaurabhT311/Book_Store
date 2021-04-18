@@ -1,6 +1,7 @@
 const cartService = require('../Service/cartService');
 
 
+
 const response = {};
 
 class cartController {
@@ -71,7 +72,26 @@ class cartController {
         }
     }
 
-    
+    deleteCartController(req,res,next){
+        try{
+            let id=req.params.id;
+            console.log("id is:", id);
+            cartService.deleteCartService(id)
+            .then((result)=>{
+                console.log("body is:", result);
+                    response.success = true;
+                    response.message = result.message;
+                    response.data = result.data;
+                    res.status(result.code).send(response);
+            }).catch((error)=>{
+                response.success = false;
+                    response.message = error.message;
+                    res.status(error.code).send(response)
+            })
+        }catch(error){
+            next(error);
+        }
+    }
 
 }
 

@@ -34,14 +34,14 @@ class cartService {
             })
     }
 
-    // deleteCartService(id){
-    //     return cartModel.deleteCart(id)
-    //     .then((result)=>{
-    //         return ({ success: true, message: "Cart deleted Successfully", data: result, code: OK });
-    //     }).catch((error)=>{
-    //         return ({ success: false, message: "Cart Updated Successfully", data: result, code: OK });
-    //     })
-    // }
+    deleteCartService(id){
+        return cartModel.deleteCart(id)
+        .then((result)=>{
+            return ({ success: true, message: "Cart deleted Successfully", data: result, code: OK });
+        }).catch((error)=>{
+            return ({ success: false, message: "No Cart Found", error: error, code: BadRequest });
+        })
+    }
 
 }
 
