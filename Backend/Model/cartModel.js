@@ -33,18 +33,18 @@ class cartModel {
         return cartData.save(data)
             .then((result) => {
                 return result;
-            }).catch((error)=>{
+            }).catch((error) => {
                 return error;
             })
     }
 
-    getCart(id){
-        return cart.find({"userId":id}).populate('userId').populate('bookId')
-        .then((result)=>{
-            return result;
-        }).catch((error)=>{
-            return error;
-        })
+    getCart(id) {
+        return cart.find({ "userId": id }).populate('userId').populate('bookId')
+            .then((result) => {
+                return result;
+            }).catch((error) => {
+                return error;
+            })
     }
 
 }
