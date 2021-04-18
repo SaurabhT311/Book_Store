@@ -20,5 +20,6 @@ route.delete('/book/:id', jwtToken.tokenVerification, bookController.deleteBookC
 //address route
 route.post('/add', jwtToken.tokenVerification, addController.addressController);
 route.put('/add/:id', jwtToken.tokenVerification, addController.updateAddressController);
+route.delete('/add/:id', jwtToken.tokenVerification, addController.deleteAddressController);
 
 module.exports = route;

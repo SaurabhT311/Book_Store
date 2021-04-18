@@ -42,8 +42,16 @@ class addModel {
     }
 
     updateAddress(id, newData) {
-        console.log("address is:", id, newData);
         return address.findByIdAndUpdate(id, newData, { new: true })
+        .then((result)=>{
+            return result;
+        }).catch((error)=>{
+            return error;
+        })
+    }
+
+    deleteAddress(id){
+        return address.findByIdAndDelete(id)
         .then((result)=>{
             return result;
         }).catch((error)=>{

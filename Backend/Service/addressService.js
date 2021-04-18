@@ -22,6 +22,15 @@ class addService{
        })
     }
 
+    deleteAddressService(id){
+        return addModel.deleteAddress(id)
+        .then((result)=>{
+            return ({ flag: true, message: "Address deleted Succesfully", data: result, code: OK });
+        }).catch((error)=>{
+            return ({ flag: false, message: "Address not found", error: error, code: BadRequest });
+        })
+    }
+
 
 }
 
