@@ -30,3 +30,4 @@ error: {"success":false,"status":508,"message":"next is not defined"} {"timestam
 error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp":"17-04-2021 02:47:49"}
 error: {"success":false,"status":508,"message":"re is not defined"} {"timestamp":"17-04-2021 02:49:37"}
 error: {"success":false,"status":508,"message":"role is not defined"} {"timestamp":"17-04-2021 02:51:11"}
+error: {"success":false,"message":"Invalid Credentials!","error":[{"value":"I","msg":"firstName requires more than 2 characters!","param":"firstName","location":"body"},{"value":"","msg":"role should start with upperCase character","param":"role","location":"body"}]} {"timestamp":"17-04-2021 12:08:14"}
