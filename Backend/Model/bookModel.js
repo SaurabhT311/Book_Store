@@ -65,7 +65,6 @@ class bookModel {
         console.log("book updates", id, newData);
         return books.findByIdAndUpdate(id, newData, { new: true })
             .then((result) => {
-                console.log("res:", result);
                 return result;
             }).catch((error) => {
                 return error;

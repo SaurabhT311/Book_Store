@@ -13,6 +13,15 @@ class addService{
         })
     }
 
+    updateAddressService(id,newData){
+       return addModel.updateAddress(id,newData)
+       .then((result)=>{
+        return ({ flag: true, message: "Address updated Succesfully", data: result, code: OK });
+       }).catch((error)=>{
+        return ({ flag: false, message: "Address Not found ", error: error, code: BadRequest });
+       })
+    }
+
 
 }
 
