@@ -31,10 +31,8 @@ class cartController {
     getCartController(req, res, next) {
         try {
             let id = req.decoded._id;
-            console.log("id is:", id);
             cartService.getCartService(id)
                 .then((result) => {
-                    console.log("body is:", result);
                     response.success = true;
                     response.message = result.message;
                     response.data = result.data;

@@ -73,6 +73,7 @@ class bookController{
                     res.status(error.code).send(response)
                 })
             }else{
+                response.success=false;
                 response.message="You are not authorized to update book in the Store";
                 res.status(Unauthorized).send(response);
             }

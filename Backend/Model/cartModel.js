@@ -38,9 +38,10 @@ class cartModel {
             })
     }
 
-    getCart(id) {
-        return cart.find({ "userId": id }).populate('userId').populate('bookId')
+    getCart() {
+        return cart.find({}).populate('userId').populate('bookId')
             .then((result) => {
+                console.log("res is:", result);
                 return result;
             }).catch((error) => {
                 return error;
@@ -56,15 +57,19 @@ class cartModel {
             })
     }
 
-    deleteCart(id){
+    deleteCart(id) {
         return cart.findByIdAndDelete(id)
-        .then((result)=>{
-            return result;
-        }).catch((error)=>{
-            return error;
-        })
+            .then((result) => {
+                return result;
+            }).catch((error) => {
+                return error;
+            })
     }
 
 }
 
 module.exports = new cartModel();
+
+
+
+

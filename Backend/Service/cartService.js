@@ -16,8 +16,8 @@ class cartService {
     }
 
 
-    getCartService(id) {
-        return cartModel.getCart(id)
+    getCartService() {
+        return cartModel.getCart()
             .then((result) => {
                 return ({ success: true, message: "These items are in your cart", data: result, code: OK });
             }).catch((error) => {

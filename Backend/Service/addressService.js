@@ -1,37 +1,47 @@
-const addModel=require('../Model/addressModel');
+const addModel = require('../Model/addressModel');
 
 let { OK, NotFound, BadRequest } = require('../Middleware/httpStatusCode.json');
 
-class addService{
+class addService {
 
-    addressService(data){
+    addressService(data, id) {
+        data.userId = id;
         return addModel.createAddress(data)
+            .then((result) => {
+                return ({ flag: true, message: "Record added Succesfully", data: result, code: OK });
+            }).catch((error) => {
+                return ({ flag: false, message: "Failed to add record", error: error, code: BadRequest });
+            })
+    }
+
+    getAddressService(){
+        return addModel.getAddress()
         .then((result)=>{
-            return ({ flag: true, message: "Record added Succesfully", data: result, code: OK });
+            return ({ flag: true, message: "User's Address Record", data: result, code: OK });
         }).catch((error)=>{
-            return ({ flag: false, message: "Failed to add record", error: error, code: BadRequest });
+            return ({ flag: false, message: "No record to show", error: error, code: BadRequest });
         })
     }
 
-    updateAddressService(id,newData){
-       return addModel.updateAddress(id,newData)
-       .then((result)=>{
-        return ({ flag: true, message: "Address updated Succesfully", data: result, code: OK });
-       }).catch((error)=>{
-        return ({ flag: false, message: "Address Not found ", error: error, code: BadRequest });
-       })
+    updateAddressService(id, newData) {
+        return addModel.updateAddress(id, newData)
+            .then((result) => {
+                return ({ flag: true, message: "Address updated Succesfully", data: result, code: OK });
+            }).catch((error) => {
+                return ({ flag: false, message: "Address Not found ", error: error, code: BadRequest });
+            })
     }
 
-    deleteAddressService(id){
+    deleteAddressService(id) {
         return addModel.deleteAddress(id)
-        .then((result)=>{
-            return ({ flag: true, message: "Address deleted Succesfully", data: result, code: OK });
-        }).catch((error)=>{
-            return ({ flag: false, message: "Address not found", error: error, code: BadRequest });
-        })
+            .then((result) => {
+                return ({ flag: true, message: "Address deleted Succesfully", data: result, code: OK });
+            }).catch((error) => {
+                return ({ flag: false, message: "Address not found", error: error, code: BadRequest });
+            })
     }
 
 
 }
 
-module.exports=new addService();
+module.exports = new addService();

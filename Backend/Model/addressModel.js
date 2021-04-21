@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 
 const addressSchema = new mongoose.Schema({
 
+    userId:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User'
+    },
 
     fullName:{
         type:String,
@@ -48,6 +52,15 @@ class addModel {
         return addData.save(data).then((result) => {
             return result;
         }).catch((error) => {
+            return error;
+        })
+    }
+
+    getAddress(){
+        return address.find({})
+        .then((result)=>{
+            return result;
+        }).catch((error)=>{
             return error;
         })
     }

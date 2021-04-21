@@ -23,12 +23,12 @@ route.delete('/book/:id', jwtToken.tokenVerification, bookController.deleteBookC
 route.post('/cart/add', jwtToken.tokenVerification, cartController.addCartController);
 route.get('/cart', jwtToken.tokenVerification, cartController.getCartController);
 route.put('/cart/update/:id', jwtToken.tokenVerification, cartController.updateCartController);
-route.delete('/cart/delete/:id',jwtToken.tokenVerification,cartController.deleteCartController);
+route.delete('/cart/delete/:id', jwtToken.tokenVerification, cartController.deleteCartController);
 
 //address route
 route.post('/add', jwtToken.tokenVerification, addController.addressController);
 route.put('/add/:id', jwtToken.tokenVerification, addController.updateAddressController);
 route.delete('/add/:id', jwtToken.tokenVerification, addController.deleteAddressController);
-
+route.get('/add/get', jwtToken.tokenVerification, addController.getAddressController);
 
 module.exports = route;
