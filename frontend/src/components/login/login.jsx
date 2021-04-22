@@ -13,15 +13,15 @@ export default function Login(props) {
     const [passwordError, setpasswordError] = useState("");
 
 
-    const makeInitial = () => {
+    const initialState = () => {
         setemailFlag(false);
         setemailError("");
         setpasswordFlag(false);
         setpasswordError("");
     };
 
-    const pattern1Check = () => {
-        makeInitial();
+    const validationCheck = () => {
+        initialState();
         const emailPattern = /[a-zA-Z0-9._]+[@]{1}[a-zA-Z120-9]*[.]{1}[a-zA-Z]*$/;
         const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/;
         let isError = false;
@@ -40,14 +40,14 @@ export default function Login(props) {
     };
 
     const handleLoginSubmit = () => {
-        if (pattern1Check()) {
+        if (validationCheck()) {
             console.log("Error Occured");
         } else {
             console.log("Success");
-            const data = {
-                email: email,
-                password: password,
-            };
+            // const data = {
+            //     email: email,
+            //     password: password,
+            // };
         }
     };
 
