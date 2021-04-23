@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './login.scss'
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button"
+import Service from '../../service/userService';
+const service=new Service();
 
 export default function Login(props) {
 
@@ -44,10 +46,23 @@ export default function Login(props) {
             console.log("Error Occured");
         } else {
             console.log("Success");
-            // const data = {
-            //     email: email,
-            //     password: password,
-            // };
+            const data = {
+                email: email,
+                password: password,
+            };
+            service.login(data).then((result)=>{
+                console.log("result is:",result);
+                localStorage.setItem("FullName", result.data.data.fullName);
+                localStorage.setItem("email",result.data.data.email);
+                localStorage.setItem("token",result.data.data.token);
+                setTimeout(() => {
+                    // this.nextPath('/dashboard');
+                },
+                    1500);
+
+            }).catch((error)=>{
+                console.log("erros",error);
+            })
         }
     };
 

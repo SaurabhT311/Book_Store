@@ -9,4 +9,8 @@ export default class userService {
     registration = (data) => {
         return axios.postMethod(`${baseurl}/registration`, data)
     }
+
+    login = (data) => {
+        return axios.postMethod(`${baseurl}/login`, data)
+    }
 }
