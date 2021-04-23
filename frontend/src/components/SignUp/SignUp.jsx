@@ -65,22 +65,6 @@ export default function SignUp(props) {
     };
 
     const handleSignupSubmit = () => {
-        // const check = validation();
-        // if(!check){
-        //     let data={
-        //         "fullName":name,
-        //         "email":email,
-        //         "mobile":mobile,
-        //         "password":password
-        //     }
-        //     service.registration(data).then((result)=>{
-        //         console.log("res:",result);
-        //     }).catch((error)=>{
-        //         console.log("errors:",error);
-        //     })
-        // }else{
-        //     console.log("api failed");
-        // }
         if (validation()) {
             console.log("Error Occured");
         } else {
