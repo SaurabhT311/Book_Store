@@ -1,6 +1,8 @@
 const routes=require('./Routes/routes');
 const express=require('express')
 const app=express();
+var cors=require('cors')
+app.use(cors());
 const {InternalServerError}=require('./Middleware/httpStatusCode.json');
 const port=5000;
 require('dotenv').config();

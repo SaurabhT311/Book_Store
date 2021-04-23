@@ -82,7 +82,7 @@ export default function Login(props) {
                 </div>
 
                 <div className="button">
-                    <Button text="test" fullWidth="true" onClick={handleLoginSubmit} className="lbtn">
+                    <Button text="test" fullWidth="true" onClick={handleLoginSubmit}>
                         LOGIN </Button>
                 </div>
                <br></br>

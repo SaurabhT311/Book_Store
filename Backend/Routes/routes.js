@@ -8,7 +8,7 @@ const jwtToken = require('../Middleware/jwtToken');
 const { validate } = require('../Middleware/validate');
 
 
-route.post('/registration', register, validate, userController.userResgistrationController);
+route.post('/registration', register,  userController.userResgistrationController);
 route.post('/login', login, validate, userController.userLoginController);
 
 

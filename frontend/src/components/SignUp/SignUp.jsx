@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from "@material-ui/core/TextField";
+import Service from '../../service/userService';
 import './Signup.scss';
+
+const service=new Service();
 
 export default function SignUp(props) {
 
@@ -32,7 +35,7 @@ export default function SignUp(props) {
 
     const validation = () => {
         initialState();
-        const namePattern = /^[A-Z]{1}[a-z]{3,}$/;
+        const namePattern = /[A-Z]{1}[a-z]{3,}$/;
         const emailPattern = /[a-zA-Z0-9._]+[@]{1}[a-zA-Z120-9]*[.]{1}[a-zA-Z]*$/;
         const passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/;
         const mobilePattern = /^[6-9]{1}[0-9]{9}$/;
@@ -62,17 +65,38 @@ export default function SignUp(props) {
     };
 
     const handleSignupSubmit = () => {
+        // const check = validation();
+        // if(!check){
+        //     let data={
+        //         "fullName":name,
+        //         "email":email,
+        //         "mobile":mobile,
+        //         "password":password
+        //     }
+        //     service.registration(data).then((result)=>{
+        //         console.log("res:",result);
+        //     }).catch((error)=>{
+        //         console.log("errors:",error);
+        //     })
+        // }else{
+        //     console.log("api failed");
+        // }
         if (validation()) {
             console.log("Error Occured");
         } else {
             console.log("Success");
-            // const data = {
-            //     fullname: name,
-            //     email: email,
-            //     password: password,
-            //     mobile: mobile,
-            // };
-            // console.log(data);
+            const data = {
+                fullName: name,
+                email: email,
+                password: password,
+                mobile: mobile,
+            };
+            console.log("data:",data);
+            service.registration(data).then((result) => {
+                console.log("res:", result);
+            }).catch((error) => {
+                console.log("errors:", error);
+            })
         }
     };
 
@@ -83,7 +107,7 @@ export default function SignUp(props) {
                 <div className="input_signup_field">
                     <TextField id="outlined"
                         size="small"
-                        name="Full Name"
+                        name="fullName"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         error={nameFlag}

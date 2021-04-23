@@ -5,28 +5,30 @@ const check = buildCheckFunction(["headers", "params"]);
 module.exports = {
 
     register: [
-        body('firstName')
+        body('fullName')
             .trim()
             .isString()
-            .notEmpty().withMessage('firstName is Required')
-            .isAlpha().withMessage('firstName must be only in alphabets!')
-            .isLength({ min: 2 }).withMessage('firstName requires more than 2 characters!'),
-
-        body('lastName')
-            .trim()
-            .notEmpty().withMessage('lastName is Required')
-            .isAlpha().withMessage('lastName must be only in alphabets!')
-            .isLength({ min: 2 }).withMessage('lastName requires more than 2 characters!'),
+            .notEmpty().withMessage('fullName is Required')
+            .isAlpha().withMessage('fullName must be only in alphabets!')
+            .isLength({ min: 2 }).withMessage('fullName requires more than 2 characters!'),
 
         body('email')
             .trim()
             .isEmail().withMessage('Please enter valid email')
             .notEmpty().withMessage('email is required'),
 
+            
+        body("mobile")
+            .trim()
+            .notEmpty().withMessage("Mobile Number is Required!")
+            .isLength({ min: 10 }).withMessage("MobileNumber atleast contains  10 digit!"),
+            
+
         body('password')
             .trim()
             .notEmpty().withMessage('password is required')
-            .isLength({ min: 5 }).withMessage('password should contain 5 characters')
+            .isLength({ min: 5 }).withMessage('password should contain 5 characters'),
+
     ],
 
     login: [
@@ -39,6 +41,6 @@ module.exports = {
             .trim()
             .notEmpty().withMessage('password is required')
             .isLength({ min: 5 }).withMessage('password should contain 5 characters')
-    ]   
-   
+    ]
+
 }

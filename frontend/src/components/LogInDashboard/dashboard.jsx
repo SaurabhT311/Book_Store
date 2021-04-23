@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './dashboard.scss';
 import logo from '../../Assets/login.png';
 import SignIn from '../LogIn/Login';
@@ -8,8 +8,8 @@ import { Route, Switch } from 'react-router-dom';
 
 export default function Login(props) {
 
-    const [login, setlogin] = React.useState(true)
-    const [Signup, setSignup] = React.useState(false)
+    const [login, setlogin] = useState(true)
+    const [Signup, setSignup] = useState(false)
 
 
     const nextPath = (path) => {
@@ -45,7 +45,7 @@ export default function Login(props) {
                     </div>
                 </div>
 
-                <form className="form">
+                <div className="form">
                     <div className="form_input">
                         <div className="header">
                             <div className="login">
@@ -67,7 +67,7 @@ export default function Login(props) {
                             </Route>
                         </Switch>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     )

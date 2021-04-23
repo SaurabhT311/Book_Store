@@ -3,14 +3,9 @@ const bcryptPassword = require('../Middleware/bcrypt');
 const jwtToken = require('../Middleware/jwtToken');
 const userSchema = new mongoose.Schema({
 
-    firstName: {
+    fullName: {
         type: String,
         required: true
-    },
-
-    lastName: {
-        type: String,
-        required: true,
     },
 
     email: {
@@ -47,8 +42,7 @@ class userModel {
     userDataObject = (result) => {
         return {
             "_id": result._id,
-            "firstName": result.firstName,
-            "lastName": result.lastName,
+            "fullName": result.fullName,
             "email": result.email,
             "mobile":result.mobile,
             "role":result.role
@@ -87,8 +81,7 @@ class userModel {
                         let userData = {
                             "_id": data[0]._id,
                             "role":data[0].role,
-                            "firstName": data[0].firstName,
-                            "lastName": data[0].lastName,
+                            "fullName": data[0].fullName,
                             "email": data[0].email,
                             "token": token
                         }
