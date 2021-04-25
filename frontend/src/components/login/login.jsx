@@ -3,6 +3,7 @@ import './login.scss'
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button"
 import Service from '../../service/userService';
+import {useHistory } from 'react-router';
 const service=new Service();
 
 export default function Login(props) {
@@ -21,6 +22,8 @@ export default function Login(props) {
         setpasswordFlag(false);
         setpasswordError("");
     };
+
+    let history=useHistory();
 
     const validationCheck = () => {
         initialState();
@@ -55,10 +58,9 @@ export default function Login(props) {
                 localStorage.setItem("FullName", result.data.data.fullName);
                 localStorage.setItem("email",result.data.data.email);
                 localStorage.setItem("token",result.data.data.token);
-                setTimeout(() => {
-                    // this.nextPath('/dashboard');
-                },
-                    1500);
+                setTimeout(() => {  history.push("/dashBoard"); 
+            },
+                1500);
 
             }).catch((error)=>{
                 console.log("erros",error);
