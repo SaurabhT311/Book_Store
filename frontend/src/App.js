@@ -1,19 +1,22 @@
 import './App.css';
-import Dashboard from './components/LogInDashboard/dashboard';
+import Dash from './Component/SignInDashboard/Dash'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
-import BookHeader from './components/Header/BookHeader';
+import Dashboard from './Component/DashBoard/DashBoard'
+import store from'./Component/Redux/store'
+import {Provider} from 'react-redux'
 
 function App() {
   return (
     <div className="App">
-      {/* <BookHeader/> */}
-      <BrowserRouter>
+    <Provider store={store}>   
+       <BrowserRouter>
         <Switch>
           <Redirect path="/" to="/book-store/login" exact />
-          <Route path="/book-store" component={Dashboard} />
-          <Route path="/dashBoard" exact component={BookHeader}/>
-        </Switch>
-      </BrowserRouter>
+          <Route path="/book-store" component={Dash}/>
+          <Route path="/dashBoard" component={Dashboard}/>
+          </Switch>
+          </BrowserRouter>
+          </Provider>
 
     </div>
   );
