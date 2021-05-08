@@ -13,8 +13,6 @@ import Services from '../../Services/bookService'
 
 const service = new Services()
 
-
-
 const useStyles = makeStyles((theme) => ({
     bookName: {
         fontSize: "13px",
