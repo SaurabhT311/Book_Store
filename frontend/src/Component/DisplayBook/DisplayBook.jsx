@@ -7,11 +7,11 @@ import bookImg from "../../Assets/imagebook.jpg";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import Pagination from "../Pagination/Pagination";
+import * as action from '../Redux/actions/action';
+import { connect, useDispatch, useSelector } from 'react-redux'
 import Services from '../../Services/bookService'
 
 const service = new Services()
-
-
 
 const useStyles = makeStyles((theme) => ({
     bookName: {
@@ -71,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function DisplayBooks(props) {
+// export default function DisplayBooks(props) {
+    function DisplayBooks(props){
     const classes = useStyles();
     const [books, setBooks] = React.useState([]);
     const [data, setData] = React.useState(0);
@@ -79,21 +80,24 @@ export default function DisplayBooks(props) {
     const [postsPerPage] = React.useState(8);
     const [currentPage, setCurrentPage] = React.useState(1);
 
-
     React.useEffect(() => {
-        getAllBooks();
+        props.getBooks();
     }, []);
 
-    const getAllBooks = () => {
-        service.getbook().then((result) => {
-            console.log("data is ", data);
-            setBooks(result.data.data);
-            setData(result.data.data);
-            books.map((result))
-        }).catch((error) => {
-            console.log("error");
-        })
-    };
+    // React.useEffect(() => {
+    //     getAllBooks();
+    // }, []);
+
+    // const getAllBooks = () => {
+    //     service.getbook().then((result) => {
+    //         console.log("data is ", data);
+    //         setBooks(result.data.data);
+    //         setData(result.data.data);
+    //         books.map((result))
+    //     }).catch((error) => {
+    //         console.log("error");
+    //     })
+    // };
 
 
     const handleChange = (event) => {
@@ -124,7 +128,7 @@ export default function DisplayBooks(props) {
         data.isCart = true;
         service.addToCart(id).then((result) => {
             props.allCartItem();
-            console.log("Added Sucessfully in Cart",result);
+            console.log("Added Sucessfully in Cart", result);
         }).catch((error) => {
             console.log(error);
             console.log("error");
@@ -137,8 +141,8 @@ export default function DisplayBooks(props) {
 
     const indexOfLastBook = currentPage * postsPerPage;
     const indexOfFirstBook = indexOfLastBook - postsPerPage;
-    const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
-
+    const currentBooks = props.Books.books.slice(indexOfFirstBook, indexOfLastBook);
+    console.log("index of first book",indexOfFirstBook);
 
     return (
         <div className="displayBook">
@@ -223,3 +227,8 @@ export default function DisplayBooks(props) {
     );
 }
 
+const mapDispatchToProps = (state) => {
+    return state;
+}
+
+export default connect(mapDispatchToProps, action)(DisplayBooks);
